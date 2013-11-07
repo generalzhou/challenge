@@ -1,5 +1,5 @@
  require 'rspec'
- require '../prime'
+ require_relative '../prime'
 
  describe Prime  do
   describe "get_primes" do
@@ -21,7 +21,7 @@
 
     it 'should only generate new primes if needed' do
       generator.get_primes(10)
-      generator.should_receive(:is_prime).exactly(1).times
+      generator.should_receive(:is_prime).exactly(0).times
       generator.get_primes(5)
     end
   end

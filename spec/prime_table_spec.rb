@@ -1,5 +1,5 @@
  require 'rspec'
- require '../prime_table'
+ require_relative '../prime_table'
 
 describe PrimeTable  do
   describe '#new' do
